@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-""" starts a flask web applications"""
+""" starts a Flask web application"""
 from flask import Flask
 
-app = Falsk(__name__)
+
+app = Flask(__name__)
+
 
 @app.route('/')
-def hello():
-    return 'Hello HBNB!'
+def Home():
+    return "Hello HBNB!"
 
 
 if __name__ == '__main__':
